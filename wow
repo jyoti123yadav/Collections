@@ -1,0 +1,7 @@
+node{
+stage('SCM checckout'){
+git 'https://github.com/jyoti123yadav/Collections'
+}
+stage('compile-package'){
+sh 'maven package'
+}
